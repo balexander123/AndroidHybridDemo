@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidHybridDemo</string>
+    <string name="title_section1">Shop</string>
+    <string name="title_section2">Brands</string>
+    <string name="title_section3">Stores</string>
+    <string name="title_section4">Scan</string>
+    <string name="title_section5">About</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
