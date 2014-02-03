@@ -19,6 +19,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.gap.hydriddemo.tabsswipe.adapter.ShopFragment;
+import com.gap.hydriddemo.tabsswipe.adapter.BrandFragment;
+import com.gap.hydriddemo.tabsswipe.adapter.StoresFragment;
+import com.gap.hydriddemo.tabsswipe.adapter.ScanFragment;
+import com.gap.hydriddemo.tabsswipe.adapter.AboutFragment;
+
+
+
+
 
 public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
 
@@ -128,9 +136,25 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
             ShopFragment shopFragment;
+            StoresFragment storesFragment;
+            BrandFragment brandFragment;
+            ScanFragment scanFragment;
+            AboutFragment aboutFragment;
             if (position == 0) {
                 shopFragment = new ShopFragment();
                 return shopFragment;
+            } else if (position == 1){
+                brandFragment = new BrandFragment();
+                return brandFragment;
+            } else if (position == 2) {
+                storesFragment = new StoresFragment();
+                return storesFragment;
+            } else if (position == 3) {
+                scanFragment = new ScanFragment();
+                return scanFragment;
+            } else if (position == 4) {
+                aboutFragment = new AboutFragment();
+                return aboutFragment;
             } else return PlaceholderFragment.newInstance(position + 1);
         }
 
